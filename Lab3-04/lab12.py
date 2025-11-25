@@ -135,7 +135,7 @@ def descenso_mas_rapido(F, J, x0, num_iter=2):
         d = -g
         gTd = np.dot(g, d)
 
-        # Búsqueda de línea tipo Armijo
+        # Búsqueda de línea tipo Armijo porque es la que encontré en internet
         alpha = 1.0
         c = 1e-4
         beta = 0.5
@@ -226,7 +226,6 @@ def demo():
     para el sistema dado y muestra el vector X^(2).
     """
     X2 = demo_descenso()
-    # Si quieres usar luego X2 en otro método (Newton, etc.), ya lo tienes calculado.
     return X2
 
 
